@@ -3,7 +3,7 @@ public class ThreeSum {
   public static int count(int[] a) {
     int N = a.length;
     int cnt = 0;
-    // Count how many sets of 3 in the input sum to zero
+    // Count how many sets of 3 elements in the input sum to zero
     for (int i = 0; i < N; i++) {
       for (int j = i + 1; j < N; j++) {
         for (int k = j + 1; k < N; k++) {
@@ -17,7 +17,7 @@ public class ThreeSum {
   }
 
   public static double timeTrial(int N) {
-    // Initialize a with N rando integers in the range of -MAX to MAX
+    // Initialize a with N random integers in the range of -MAX to MAX
     int MAX = 1000000;
     int[] a = new int[N];
     for (int i = 0; i < N; i++) {
